@@ -20,24 +20,6 @@
                 <h2>THIS IS VERSION 1.4</h2>
                 <p>Your PHP application is now running on a container in AWS.</p>
                 <p>The container is running PHP version <?php echo phpversion(); ?>.</p>
-                <?php;}</style>
-
-
-
-
-        <link href="assets/css/bootstrap-responsive.min.css" rel="stylesheet">
-        <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-    </head>
-
-    <body>
-        <div class="container">
-            <div class="hero-unit">
-                <img src="assets/images/p7.png" width="250" height="120">
-                <h1>PolarSeven AWS Kubernetes CI/CD Pipeline Demo</h1>
-                <h2>Congratulations</h2>
-                <h2>THIS IS VERSION 1.4</h2>
-                <p>Your PHP application is now running on a container in AWS.</p>
-                <p>The container is running PHP version <?php echo phpversion(); ?>.</p>
                 <?php
                         $myfile = fopen("/var/www/my-vol/date", "r") or die("");
                         echo fread($myfile,filesize("/var/www/my-vol/date"));
